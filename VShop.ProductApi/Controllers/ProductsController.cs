@@ -78,7 +78,7 @@ namespace VShop.ProductApi.Controllers
             {
                 return NotFound("Product not found.");
             }
-            await _productService.RemoveProduct(id);
+                await _productService.RemoveProduct(id);
 
             return Ok(produtoDto);
         }
